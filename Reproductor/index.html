@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><b>The Real G✭z</b></h1>
+        <img src="./imagenes/logogz-removebg-preview.png" alt="Logo" class="logo"> 
+        
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Buscar música...">
+            <button id="btnSearch">Buscar</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="videoPlayerSection">
+            <iframe id="videoPlayer" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h2 class="styled-title">Resultados de la búsqueda</h2>
+            <ul id="ListaVideos"></ul>
+        </section>
+
+        <section>
+            <h2 class="styled-title">Mi Playlist</h2>
+            <ul id="ListaPlaylist"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <button id="addToPlaylist">Agregar a Playlist</button>
+        <img src="./imagenes/logo_trapcapos-removebg-preview.png" alt="Álbum" class="album-logo">
+
+        <div id="audioPlayerContainer">
+            <div id="songInfo">
+                <span id="songTitle">Artista</span> - <span id="artistName">Unknown</span>
+            </div>
+            <div id="audioControls">
+                <button id="prevBtn" class="controlBtn"><img src="./imagenes/repetir.png" alt=""></button>
+                <button id="prevBtn" class="controlBtn"><img src="./imagenes/atras (1).png" alt="Atrás"></button>
+                <button id="playPauseBtn" class="controlBtn"><img src="./imagenes/jugar.png" alt="Pausar"></button>
+                <button id="nextBtn" class="controlBtn"><img src="./imagenes/siguiente (1).png" alt="Siguiente"></button>
+                <button id="nextBtn" class="controlBtn"><img src="./imagenes/simbolo-de-reproduccion-aleatoria.png" alt=""></button>
+            </div>
+        </div>
+
+        <img src="./imagenes/duende verde.png" alt="Héroe" class="hero-image">
+    </footer>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
